@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📦 Logistics 3D Loader
 
-## Getting Started
+우체국 화물 적재 효율화를 위한 3D 시각화 및 최적 적재 알고리즘 프로젝트입니다.
 
-First, run the development server:
+## 🛠️ Tech Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Frontend**: Next.js 15 (App Router), TypeScript
+- **3D Engine**: Three.js, React Three Fiber (R3F), Drei
+- **Styling**: Tailwind CSS
+- **State Management**: Zustand (예정)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📁 Folder Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+실무 패턴인 `src` 기반 구조를 따릅니다.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `@/components/canvas`: 3D 객체(트럭, 박스 등) 관련 컴포넌트
+- `@/components/common`: 공통 UI 요소
+- `@/hooks`: 커스텀 훅 (애니메이션, 데이터 로딩 등)
+- `@/lib`: 외부 라이브러리 설정 및 유틸 함수
+- `@/store`: 전역 상태 관리 (박스 위치 정보 등)
+- `@/types`: TypeScript 인터페이스 정의
 
-## Learn More
+## 🚀 Getting Started
 
-To learn more about Next.js, take a look at the following resources:
+1. 저장소 클론:
+   `git clone https://github.com/kanavi-cloud/logistics-project.git`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. 의존성 설치:
+   `npm install`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. 개발 서버 실행:
+   `npm run dev`

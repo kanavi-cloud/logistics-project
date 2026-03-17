@@ -9,6 +9,8 @@
 - **Styling**: Tailwind CSS
 - **State Management**: Zustand (예정)
 
+- R3F(React Three Fiber) - Three.js를 리액트 문법으로 쓸 수 있게 함
+- Drei - R3F 개발팀이 만든 공식 유틸리티 라이브러리 (3D 개발에 유용한 도구)
 ## 📁 Folder Structure
 
 실무 패턴인 `src` 기반 구조를 따릅니다.
